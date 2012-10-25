@@ -1,0 +1,8 @@
+#!/bin/sh
+
+avs_path=/usr/pbi/avs-$(uname -m)
+tmpfile=$(mktemp /tmp/.XXXXXX)
+
+grep -v 'avs_' /etc/rc.conf > ${tmpfile}
+cat ${avs_path}/etc/rc.conf >> ${tmpfile}
+mv ${tmpfile} /etc/rc.conf

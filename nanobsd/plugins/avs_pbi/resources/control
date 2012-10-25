@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /usr/pbi/avs-$(uname -m)/bin/python /usr/pbi/avs-$(uname -m)/control.py $*

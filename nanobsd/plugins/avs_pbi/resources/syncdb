@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/pbi/avs-amd64/bin/python /usr/pbi/avs-`uname -m`/avsUI/manage.py syncdb --migrate --noinput
